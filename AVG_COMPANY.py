@@ -80,8 +80,8 @@ prediction_accuracy = {}
 portfolio_performance = {}
 
 # Parameters
-split_ratio = 0.7  # Train/test split ratio #########HYPERPARAMTER 1#############
-price_change_threshold = 0.03  # 1.5% threshold for trading #########HYPERPARAMTER 2#############
+split_ratio = 0.5  # Train/test split ratio #########HYPERPARAMTER 1#############
+price_change_threshold = 0.015  # 1.5% threshold for trading #########HYPERPARAMTER 2#############
 initial_investment = 100.0  # Starting with $100
 
 # Create figures for plots
