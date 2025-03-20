@@ -2,9 +2,16 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
+import kagglehub
+import os
 
+path = kagglehub.dataset_download("iveeaten3223times/massive-yahoo-finance-dataset")
+
+
+csv_file = os.path.join(path, "stock_details_5_years.csv")
+df = pd.read_csv(csv_file)
 # Load dataset
-df = pd.read_csv("stock_details_5_years.csv")
+#df = pd.read_csv("stock_details_5_years.csv")
 
 # Convert Date to datetime format
 df["Date"] = pd.to_datetime(df["Date"], utc=True)
