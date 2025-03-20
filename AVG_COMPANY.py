@@ -328,4 +328,4 @@ print(f"Weighted Avg DP Strategy Final Return: {final_dp_return:.2f}%")
 print(f"Weighted Avg Buy-and-Hold Final Return: {final_buyhold_return:.2f}%")
 
 # Display the plots
-plt.show()
+plt.show(
